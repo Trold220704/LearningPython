@@ -17,7 +17,7 @@ def main():
         while True:
             try:
                 #This prints the options that the user has
-                print("Options" \
+                print("Options\n" \
                 "1: Add Task\n" \
                 "2: Remove Task\n" \
                 "3: See all Tasks\n" \
@@ -54,7 +54,7 @@ def main():
 # This function will add a task to the task list
 def add_task():
     while True:
-        print("1: Back\nType your Task or go back with 1")
+        print("1: Back\nType your Task")
         task = input("What task to you want to add: ")
         if task == "1":
             return # Returns to main()
@@ -130,7 +130,7 @@ def list_tasks():
     while True:
         try:
             #This prints the options that the user has
-            print("Options\n" \ 
+            print("Options\n" \
                 "1: Back to start\n")
             # This checks for the user input
             user_input = int(input("Which Option do you want: "))
