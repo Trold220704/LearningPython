@@ -50,7 +50,6 @@ def main():
         elif user_input == 4:
             sys.exit("Program Exited")
 
-    
 # This function will add a task to the task list
 def add_task():
     while True:
@@ -61,9 +60,6 @@ def add_task():
         else:
             with open("list.csv", "a") as file:
                 file.write(f'- {task}\n')
-
-
-
 
 # This function will remove a task from the list
 def remove_task():
@@ -121,7 +117,6 @@ def remove_task():
         
     pass
 
-
 # This function will list all tasks in the list.csv file and print them out
 def list_tasks():
     print("Here is your list\n")
@@ -146,7 +141,6 @@ def list_tasks():
     
     if user_input  == 1:
         return
-
-
+    
 if __name__ == "__main__":
     main()
