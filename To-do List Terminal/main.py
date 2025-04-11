@@ -10,7 +10,7 @@ def main():
         
         # Checks if there is a list.csv file and if there isnt it makes one
         if os.path.exists("list.csv") == False:
-            with open("list.csv") as file:
+            with open("list.csv", "w") as file:
                 file.close
         
         # While loop for the main function
