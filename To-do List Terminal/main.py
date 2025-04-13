@@ -1,5 +1,6 @@
 import sys
-import os.path
+import os
+
 
 def main():
     # Impleneted while loop in main function after chatgpt gave advice on it
@@ -26,7 +27,7 @@ def main():
                 user_input = int(input("Which Option do you want: "))
 
                 #This will check if the user input is over 3 and if it is it will continue the program and print "Not a valid option"
-                if user_input > 4:
+                if user_input not in range(1,5): # Change from "< 4" to "not in range()" for a cleaner and more robust way
                     print("Not a valid Option")
                     continue
                 break
@@ -48,7 +49,8 @@ def main():
             list_tasks()
         # If the user input 4 it will exit the program
         elif user_input == 4:
-            sys.exit("Program Exited")
+            return print("Program exited") # How it can be done without sys
+            sys.exit("Program Exited") # How i did it
 
 # This function will add a task to the task list
 def add_task():
