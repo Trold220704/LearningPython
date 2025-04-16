@@ -103,7 +103,7 @@ def list_passwords():
             user_input = int(input("Which Option do you want: "))
             #This will check if the user input is over 3 and if it is it will continue the program and print "Not a valid option"
             if user_input > 2:
-                ystem("cls")
+                system("cls")
                 print("Not a valid Option")
                 continue
             break
